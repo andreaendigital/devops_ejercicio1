@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap para ser DevOps</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        :root {
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --neon-green: #00ff7f; /* Un verde neón más oscuro */
+            --glow-color: rgba(0, 255, 127, 0.5);
+            --text-color: #e0e0e0;
+            --header-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: var(--header-color);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px var(--glow-color);
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 2px solid var(--neon-green);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 0 8px var(--neon-green), 
+                        inset 0 0 8px var(--neon-green);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 15px var(--neon-green),
+                        inset 0 0 15px var(--neon-green),
+                        0 0 25px var(--glow-color);
+        }
+
+        .card h3 {
+            color: var(--neon-green);
+            margin-top: 0;
+            border-bottom: 1px solid var(--neon-green);
+            padding-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-weight: 300;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ruta de Aprendizaje DevOps</h1>
+
+    <div class="container">
+        <div class="card">
+            <h3>1. Aprender un Lenguaje de Programación</h3>
+            <p>Domina al menos un lenguaje como <strong>Python, Go o Bash</strong>. Esto es fundamental para automatizar tareas, escribir scripts y entender el código de los desarrolladores.</p>
+        </div>
+        <div class="card">
+            <h3>2. Entender Conceptos de SO y Sistemas</h3>
+            <p>Conoce a fondo sistemas operativos como <strong>Linux</strong>. Aprende sobre gestión de procesos, el sistema de archivos, redes a bajo nivel y administración de sistemas.</p>
+        </div>
+        <div class="card">
+            <h3>3. Dominar Redes y Seguridad</h3>
+            <p>Comprende los fundamentos de redes (TCP/IP, DNS, HTTP/S, firewalls, balanceadores de carga). La seguridad es clave en cada paso del ciclo de vida del software.</p>
+        </div>
+        <div class="card">
+            <h3>4. Infraestructura como Código (IaC)</h3>
+            <p>Aprende a gestionar y provisionar infraestructura mediante código con herramientas como <strong>Terraform</strong> (para crearla) y <strong>Ansible</strong> (para configurarla).</p>
+        </div>
+        <div class="card">
+            <h3>5. CI/CD (Integración y Entrega Continua)</h3>
+            <p>Implementa pipelines de CI/CD para automatizar la compilación, prueba y despliegue de aplicaciones. Domina herramientas como <strong>Jenkins, GitLab CI o GitHub Actions</strong>.</p>
+        </div>
+        <div class="card">
+            <h3>6. Contenedores y Orquestación</h3>
+            <p>Aprende a empaquetar aplicaciones en contenedores con <strong>Docker</strong> y a gestionarlos a escala con un orquestador como <strong>Kubernetes</strong>, el estándar de la industria.</p>
+        </div>
+        <div class="card">
+            <h3>7. Monitoreo y Observabilidad</h3>
+            <p>Implementa soluciones para monitorear la salud de tus aplicaciones y la infraestructura. Utiliza herramientas como <strong>Prometheus, Grafana y el Stack ELK</strong> (Elasticsearch, Logstash, Kibana).</p>
+        </div>
+        <div class="card">
+            <h3>8. Conocer la Nube</h3>
+            <p>Familiarízate con al menos un proveedor de nube principal (<strong>AWS, Azure o Google Cloud</strong>). Aprende sobre sus servicios de cómputo, almacenamiento, redes y bases de datos.</p>
+        </div>
+    </div>
+
+</body>
+</html>
